@@ -1,0 +1,428 @@
+@using NetProject.Models
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+@model NetProject.ViewModel.AllBooksModel;
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<main>
+
+    @if (TempData["Message"] != null || TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+                <p>@(TempData["Message"] ?? TempData["ErrorMessage"])</p>
+            </div>
+        </div>
+    }
+
+    <div class="search">
+        <h3>Here you can search for books</h3>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="search" placeholder="Search by title..." oninput="filterBooks()" />
+    </div>
+
+    <div class="cardContainer">
+        @foreach (Book book in Model.allBooks)
+        {
+            if (book.quantity >= 0)
+            {
+                <div class="card" data-title="@book.title">
+                    <h3>@book.title</h3>
+                    <p><strong>Author:</strong> @book.author</p>
+                    <p><strong>Publish Year:</strong> @book.publishYear</p>
+                    <p><strong>Publisher:</strong> @book.publisher</p>
+                    <p><strong>Genre:</strong> @book.genre</p>
+                    <p><strong>quantity:</strong> @book.quantity</p>
+                    <p>
+                        <strong>Purchase Price:</strong>
+                        @if (book.DiscountPercentage > 0)
+                        {
+                            <span style="text-decoration: line-through;">$@book.PurchasePrice</span>
+                            <span style="color: green;">$@book.DiscountedPrice</span>
+                        }
+                        else
+                        {
+                            <span>$@book.PurchasePrice</span>
+                        }
+                    </p>
+                    <p>
+                        <strong>Loan Price:</strong>
+                        @if (book.DiscountPercentage > 0)
+                        {
+                            <span style="text-decoration: line-through;">$@book.LoanPrice</span>
+                            <span style="color: green;">$@book.DiscountedLoanPrice</span>
+                        }
+                        else
+                        {
+                            <span>$@book.LoanPrice</span>
+                        }
+                    </p>
+
+                    <div class="Buttons">
+                        <form action="DeleteBook" method="post" onsubmit="return confirmDelete()">
+                            <input type="hidden" name="bookTitle" value="@book.title" />
+                            <button type="submit"
+                                style="background-color: red; color: white; display: flex; align-items: center;">
+                                <i class="fa-solid fa-x" style="color: #ffffff; margin-right: 8px;"></i>
+                                Delete Book
+                            </button>
+                        </form>
+
+                        <button type="button" style="background-color: rgb(177, 177, 177); display: flex; align-items: center;"
+                            onclick="openEditModal('@book.title', '@book.author', '@book.genre',@book.quantity, @book.PurchasePrice, @book.LoanPrice, '@book.publisher', @book.publishYear ,@book.DiscountPercentage,@book.DiscountEndDate)">
+                            <i class="fa-solid fa-pen" style="color: #ffffff; margin-right: 8px;"></i>
+                            Edit Book
+                        </button>
+
+                    </div>
+                </div>
+            }
+
+        }
+    </div>
+
+    <!-- Edit Pop-out Modal -->
+    <div id="editModal" class="edit-modal" style="display: none;">
+        <div class="edit-modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3>Edit Book</h3>
+            <form id="editForm" method="post" action="EditBook">
+
+                <div class="Label1">
+                    <label for="bookTitle">Title:</label>
+                    <!-- Changed input type to text so it's visible -->
+                    <input type="text" id="editBookTitle" name="bookTitle" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="author">Author:</label>
+                    <input type="text" id="editAuthor" name="author" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="editGenre" name="genre" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="quantity">Quantity:</label>
+                    <input type="text" id="editQuantity" name="quantity" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="purchasePrice">Purchase Price:</label>
+                    <input type="number" id="editPurchasePrice" name="purchasePrice" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="loanPrice">Loan Price:</label>
+                    <input type="number" id="editLoanPrice" name="loanPrice" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="publisher">Publisher:</label>
+                    <input type="text" id="editPublisher" name="publisher" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="publishYear">Publish Year:</label>
+                    <input type="number" id="editPublishYear" name="publishYear" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="discountPercentage">Discount Percentage:</label>
+                    <input type="number" id="editDiscountPercentage" name="discountPercentage" required min="0"
+                        max="100" />
+                </div>
+
+                <div class="Label1">
+                    <label for="discountDuration">discount End Date:</label>
+                    <input type="date" id="editdiscountEndDate" name="discountEndDate" max="7" />
+                </div>
+
+
+                <button type="submit" style="background-color: green; color:aliceblue; padding: 8px;">Save
+                    Changes</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</main>
+
+<!-- Styles for the modal pop-out -->
+<style>
+    .Label1 {
+        display: flex;
+    }
+
+    .edit-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edit-modal-content {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        font-family: "Arial", sans-serif;
+
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: red;
+    }
+
+    button {
+        padding: 5px 8px;
+        border-radius: 3px;
+        border: none;
+
+    }
+
+    input {
+        padding: 4px;
+        margin: 5px;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        z-index: 1000;
+        /* Ensure it appears above other elements */
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        /* Adjust width as needed */
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: red;
+    }
+
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Individual card styling */
+    .card {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card title */
+    .card h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    /* Card text */
+    .card p {
+        margin: 5px 0;
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    /* Buttons container inside cards */
+    .Buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    /* Common button styling */
+    .Buttons button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .Buttons button i {
+        margin-right: 8px;
+    }
+
+    /* Delete button */
+    .Buttons button[style*="background-color: red"] {
+        background-color: #ff4d4f;
+        color: white;
+    }
+
+    .Buttons button[style*="background-color: red"]:hover {
+        background-color: #e60000;
+        transform: scale(1.05);
+    }
+
+    /* Edit button */
+    .Buttons button[style*="background-color: rgb(177, 177, 177)"] {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .Buttons button[style*="background-color: rgb(177, 177, 177)"]:hover {
+        background-color: #3e8e41;
+        transform: scale(1.05);
+    }
+
+    /* Search bar styling */
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .search input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .search input:focus {
+        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+        border-color: #007bff;
+    }
+
+    .search i {
+        color: #007bff;
+        font-size: 1.5rem;
+    }
+</style>
+
+<script>
+    // Function to filter books based on search input
+    function filterBooks() {
+        const searchQuery = document.getElementById("search").value.toLowerCase();
+        const books = document.querySelectorAll(".card");
+
+        books.forEach(book => {
+            const title = book.getAttribute("data-title").toLowerCase();
+            // Show book if title matches search query
+            if (title.includes(searchQuery)) {
+                book.style.display = "block";
+            } else {
+                book.style.display = "none";
+            }
+        });
+    }
+
+    // Confirm delete action
+    function confirmDelete() {
+        return confirm("Are you sure you want to delete this book?");
+    }
+
+    // Open the Edit Pop-out Modal
+    function openEditModal(title, author, genre, quantity, purchasePrice, loanPrice, publisher, publishYear, discountPercentage,discountEndDate) {
+        document.getElementById("editBookTitle").value = title;  // Set book title in the hidden field
+        document.getElementById("editAuthor").value = author;
+        document.getElementById("editGenre").value = genre;
+        document.getElementById("editQuantity").value = quantity;
+        document.getElementById("editPurchasePrice").value = purchasePrice;
+        document.getElementById("editLoanPrice").value = loanPrice;
+        document.getElementById("editPublisher").value = publisher;
+        document.getElementById("editPublishYear").value = publishYear;
+        document.getElementById("editDiscountPercentage").value = discountPercentage;
+        document.getElementById("editdiscountEndDate").value = discountEndDate;
+
+        document.getElementById("editModal").style.display = "flex";
+    }
+
+
+    // Close the modal
+    function closeModal() {
+        document.getElementById("editModal").style.display = "none";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const errorMessageModal = document.getElementById("errorMessageModal");
+        if (errorMessageModal) {
+            errorMessageModal.style.display = "flex"; // Show the modal if it exists
+        }
+    });
+
+    function closeErrorModal() {
+        const errorMessageModal = document.getElementById("errorMessageModal");
+        if (errorMessageModal) {
+            errorMessageModal.style.display = "none"; // Hide the modal
+        }
+    }
+</script>

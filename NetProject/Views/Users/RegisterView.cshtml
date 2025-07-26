@@ -1,0 +1,121 @@
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+<link href="~/css/Users.css" rel="stylesheet" />
+@model NetProject.Models.User
+
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+<main>
+
+    @if (TempData["Message"] != null || TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+                <p>@(TempData["Message"] ?? TempData["ErrorMessage"])</p>
+            </div>
+        </div>
+    }
+
+
+    <form action="ShowDetails" method="post">
+        <div class="container">
+            <div class="iconLabel">
+                <i class="fa-solid fa-user-tie" style="color: #ffffff;"></i>
+                <label for="username">Username</label>
+            </div>
+            <input type="text" name="username" placeholder="yazan" id="username" />@Html.ValidationMessageFor(x =>
+            x.username)
+
+            <div class="iconLabel">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                <label for="email">email</label>
+            </div>
+            <input type="text" name="email" placeholder="yazan@gmail.com" id="email">@Html.ValidationMessageFor(x =>
+            x.email)
+
+
+            <div class="iconLabel">
+                <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+                <label for="password">Password</label>
+            </div>
+            <input type="password" name="password" id="password">@Html.ValidationMessageFor(x => x.password)
+
+            <div class="iconLabel">
+                <i class="fa-solid fa-check"></i>
+                <label for="ConfirmPassword">Confirm Password</label>
+            </div>
+            <input type="password" name="ConfirmPassword" id="ConfirmPassword">@Html.ValidationMessageFor(x =>
+            x.ConfirmPassword)
+
+
+
+            <input type="submit" class="submit">
+
+            <p>Already have an Account?</p>
+            <a href="http://localhost:5224/Users/LoginView?">Login</a>
+        </div>
+    </form>
+</main>
+
+<style>
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        z-index: 1000;
+        /* Ensure it appears above other elements */
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        /* Adjust width as needed */
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: red;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const errorMessageModal = document.getElementById("errorMessageModal");
+        if (errorMessageModal) {
+            errorMessageModal.style.display = "flex"; // Show the modal if it exists
+        }
+    });
+
+    function closeErrorModal() {
+        const errorMessageModal = document.getElementById("errorMessageModal");
+        if (errorMessageModal) {
+            errorMessageModal.style.display = "none"; // Hide the modal
+        }
+    }
+</script>

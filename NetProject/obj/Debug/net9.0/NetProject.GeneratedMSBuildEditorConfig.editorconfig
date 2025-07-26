@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NetProject
+build_property.RootNamespace = NetProject
+build_property.ProjectDir = C:\Users\yazan\OneDrive\Desktop\SOFTWARE\NetProject\NetProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\yazan\OneDrive\Desktop\SOFTWARE\NetProject\NetProject
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Books/BooksView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQm9va3NWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Books/MainBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcTWFpbkJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Books/ManageBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcTWFuYWdlQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Books/_CartPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcX0NhcnRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/CreditCards/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlZGl0Q2FyZHNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Main/AddBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxBZGRCb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Main/LoggedinView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxMb2dnZWRpblZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Main/MainView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxNYWluVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Main/ProfileView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxQcm9maWxlVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Shared/Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Users/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Users/RegisterView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0ZXJWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yazan/OneDrive/Desktop/SOFTWARE/NetProject/NetProject/Views/Users/UsersView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlcnNWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

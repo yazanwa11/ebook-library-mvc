@@ -1,0 +1,98 @@
+@using Newtonsoft.Json
+@using NetProject.Models
+
+
+<header>
+    <h2> eBook Library</h2>
+    <nav>
+        <ul>
+            @{
+                string userType = null;
+                string sessionUserJson = Context.Session.GetString("User");
+                if (!string.IsNullOrEmpty(sessionUserJson))
+                {
+                    var loggedInUser = JsonConvert.DeserializeObject<User>(sessionUserJson);
+                    if (loggedInUser != null)
+                    {
+                        userType = loggedInUser.type; // Set the user type based on the session.
+                    }
+                }
+            }
+
+            @if (!string.IsNullOrEmpty(userType))
+            {
+                if (userType == "admin")
+                {
+                    <li><a href="/Books/ManageBooks"><i class="fa-solid fa-book"></i> Manage Books</a></li>
+                    <li><a href="/Main/AddBooks"><i class="fa-solid fa-book"></i> Add Books</a></li>
+                    <li><a href="/Users/Logout"><i class="fa-solid fa-arrow-right-to-bracket"></i> Logout</a></li>
+                }
+                else if (userType == "customer")
+                {
+                    <li><a href="/Main/LoggedinView"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="/Books/BooksView"><i class="fa-solid fa-book"></i> Books</a></li>
+                    <li><a href="/Main/ProfileView"><i class="fa-solid fa-user-tie" style="color: #ffffff;"></i> Profile</a></li>
+                    <li><a href="/Books/ViewCart"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Cart</a></li>
+                    <li><a href="/Users/Logout"><i class="fa-solid fa-arrow-right-to-bracket"></i> Logout</a></li>
+                }
+            }
+            else
+            {
+                <li><a href="/Books/MainBooks"><i class="fa-solid fa-book"></i> Books</a></li>
+                <li><a href="/Main/MainView"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="/Users/LoginView"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
+            }
+        </ul>
+    </nav>
+</header>
+
+<main>
+    @RenderBody()
+</main>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "system-ui";
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: rgb(40, 39, 40);
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        font-family: "system-ui";
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    ul li {
+        padding: 4px;
+        margin: 10px;
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 3px;
+        transition: transform 0.3s, background 0.3s;
+        cursor: pointer;
+    }
+
+    ul li:hover {
+        transform: scale(1.2);
+        background-color: gray;
+    }
+
+    ul a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+@RenderSection("Scripts", required: false) ✅

@@ -1,0 +1,973 @@
+@using NetProject.Models
+<link rel="stylesheet" href="/css/Books.css?v=2.0">
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+@model NetProject.ViewModel.AllBooksModel;
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<main>
+    <!-- Display TempData Message -->
+    @if (TempData["Message"] != null || TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+                <p>@(TempData["Message"] ?? TempData["ErrorMessage"])</p>
+            </div>
+        </div>
+    }
+
+
+
+    <div class="search-and-sort">
+        <div class="search">
+            <h3>Here you can search for your favorite books</h3>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="search" placeholder="Search by title..." oninput="filterBooks()" />
+        </div>
+        <button onclick="openFilterSortModal()" class="filter-button">Filter & Sort</button>
+    </div>
+
+    <div id="filterSortModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeFilterSortModal()">&times;</span>
+            <h3>Sort & Filter Options</h3>
+            <div class="modal-body">
+                <!-- Sorting -->
+                <div class="sorting">
+                    <label for="sortOptions">Sort by:</label>
+                    <select id="sortOptions">
+                        <option value="default">Select an option</option>
+                        <option value="priceAsc">Price: Low to High</option>
+                        <option value="priceDesc">Price: High to Low</option>
+                        <option value="year">Year of Publishing</option>
+                    </select>
+                </div>
+
+                <!-- Filtering by Genre -->
+                <div class="filter-by-genre">
+                    <h4>Filter by Genre:</h4>
+                    <label>
+                        <input type="radio" name="genre" value="all" checked />
+                        All
+                    </label>
+                    @foreach (var genre in Model.allBooks.Select(b => b.genre).Distinct())
+                    {
+                        <label>
+                            <input type="radio" name="genre" value="@genre" onchange="filterBooks()" />
+                            @genre
+                        </label>
+                    }
+                </div>
+
+                <div class="filter-by-author">
+                    <h4>Filter by Author:</h4>
+                    <label>
+                        <input type="radio" name="author" value="all" checked />
+                        All
+                    </label>
+                    @foreach (var author in Model.allBooks.Select(b => b.author).Distinct())
+                    {
+                        <label>
+                            <input type="radio" name="author" value="@author" onchange="filterBooks()" />
+                            @author
+                        </label>
+                    }
+                </div>
+
+                <!-- Additional Filters -->
+                <div class="additional-filters">
+                    <h4>Additional Filters:</h4>
+                    <<div class="filter-options">
+                        <label>
+                            <input type="radio" name="bookFilter1" value="all" checked="checked"
+                                onclick="filterBooks()">
+                            Show All Books
+                        </label>
+                        <label>
+                            <input type="radio" name="bookFilter1" value="buyOnly" onclick="filterBooks()">
+                            Show Buy-Only Books
+                        </label>
+                </div>
+
+                <div class="filter-options">
+                    <label>
+                        <input type="radio" name="bookFilter2" value="all" checked="checked" onclick="filterBooks()">
+                        Show All Books
+                    </label>
+                    <label>
+                        <input type="radio" name="bookFilter2" value="discounted" onclick="filterBooks()">
+                        Show Discounted Books Only
+                    </label>
+                </div>
+
+
+
+
+                <div>
+                    <input type="number" id="minPrice" value="0" oninput="filterBooks()" />
+                    <input type="number" id="maxPrice" value="1000" oninput="filterBooks()" />
+                </div>
+            </div>
+        </div>
+        <!-- Reset Button -->
+        <button type="button" onclick="resetFiltersAndSort()">Reset</button>
+
+    </div>
+    </div>
+
+
+
+    <div class="cardContainer">
+        @foreach (Book book in Model.allBooks)
+        {
+            if (book.quantity > 0 && !book.isBuyOnly)
+            {
+                <div class="card" data-title="@book.title" data-genre="@book.genre" data-author="@book.author"
+                    data-price="@book.PurchasePrice" data-discounted-price="@book.DiscountedPrice" data-year="@book.publishYear"
+                    data-is-buy-only="@book.isBuyOnly.ToString().ToLower()">
+
+                    <div class="book-image">
+                        <img src="@book.CoverImage" alt="@book.title" class="book-cover" />
+                    </div>
+                    <div class="book-details">
+                        <h3>@book.title</h3>
+                        <p>Author: @book.author</p>
+                        <p>Year: @book.publishYear</p>
+                        <p>Publisher: @book.publisher</p>
+
+                        <!-- Rating Display -->
+                        <p>
+                            <strong>Rating:</strong>
+                            @if (book.AverageRating > 0)
+                            {
+                                @for (int i = 0; i < 5; i++)
+                                {
+                                    <span class="star @(i < book.AverageRating ? "filled" : "")">&#9733;</span>
+                                }
+                            }
+                            else
+                            {
+                                <span>No ratings yet</span>
+                            }
+                        </p>
+
+                        <p>Genre: @book.genre</p>
+                        <p>
+                            <strong>Purchase Price:</strong>
+                            @if (book.DiscountPercentage > 0)
+                            {
+                                <span style="text-decoration: line-through;">$@book.PurchasePrice</span>
+                                <span style="color: rgb(41, 227, 41);">$@book.DiscountedPrice</span>
+                            }
+                            else
+                            {
+                                <span>$@book.PurchasePrice</span>
+                            }
+                        </p>
+                        <p>
+                            <strong>Loan Price:</strong>
+                            @if (book.DiscountPercentage > 0)
+                            {
+                                <span style="text-decoration: line-through;">$@book.LoanPrice</span>
+                                <span style="color: rgb(41, 227, 41);">$@book.DiscountedLoanPrice</span>
+                            }
+                            else
+                            {
+                                <span>$@book.LoanPrice</span>
+                            }
+                        </p>
+                        <p>Available to Borrow: @book.quantity</p>
+                        <div class="Buttons">
+                            <button type="button" onclick="openEditModal('purchase', '@book.title')">
+                                Purchase
+                            </button>
+                            <button type="button" onclick="openEditModal('loan', '@book.title')">
+                                Loan
+                            </button>
+                            <form action="@Url.Action("AddToCart", new { bookTitle = book.title })" method="post">
+                                <button type="submit">+ Add to Cart</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (book.isBuyOnly)
+            {
+                <div class="card" data-title="@book.title" data-genre="@book.genre" data-author="@book.author"
+                    data-price="@book.PurchasePrice" data-discounted-price="@book.DiscountedPrice" data-year="@book.publishYear"
+                    data-is-buy-only="@book.isBuyOnly.ToString().ToLower()">
+                    <div class="book-image">
+                        <img src="@book.CoverImage" alt="@book.title" class="book-cover" />
+                    </div>
+                    <div class="book-details">
+                        <h3>@book.title</h3>
+                        <p>Author: @book.author</p>
+                        <p>Year: @book.publishYear</p>
+                        <p>Publisher: @book.publisher</p>
+                        <p>Genre: @book.genre</p>
+                        <p>Average Rating: @book.AverageRating</p>
+                        <p>Purchase Price: $@book.PurchasePrice</p>
+                        <div class="Buttons">
+                            <button type="button" onclick="openEditModal('purchase', '@book.title')">
+                                Purchase
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="card out-of-stock" data-title="@book.title" data-author="@book.author" data-genre="@book.genre"
+                    data-price="@book.PurchasePrice" data-year="@book.publishYear" data-discounted-price="@book.DiscountedPrice"
+                    data-is-buy-only="@book.isBuyOnly.ToString().ToLower()">
+                    <div class="book-image">
+                        <img src="@book.CoverImage" alt="@book.title" class="book-cover" />
+                    </div>
+                    <div class="book-details">
+                        <h3>@book.title</h3>
+                        <p>Author: @book.author</p>
+                        <p>Year: @book.publishYear</p>
+                        <p>Publisher: @book.publisher</p>
+                        <p>Genre: @book.genre</p>
+                        <p>Average Rating: @book.AverageRating</p>
+                        <p>Purchase Price: $@book.PurchasePrice</p>
+                        <p>Loan Price: $@book.LoanPrice</p>
+                        <p style="color:red">OUT OF STOCK</p>
+                        <div class="Buttons">
+                            <button type="button" onclick="openEditModal('purchase', '@book.title')">
+                                Purchase
+                            </button>
+                            <button type="button" onclick="openWaitingListModal('@book.title')">Enter Waiting List</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+
+    <div id="WaitingListModal" class="waiting-list-modal" style="display: none;">
+        <div class="waiting-list-modal-content">
+            <span class="close-btn" onclick="closemodal()">&times;</span>
+            <h3>Join Waiting List</h3>
+            <p>Book Title: <span id="bookTitleDisplay"></span></p>
+
+
+            <div id="waitingListMessage"></div>
+
+            <!-- Form to submit the book title to EnterWaitingList action -->
+            <form id="waitingListForm" method="post" action="@Url.Action("EnterWaitingList", "Books")"
+                style="display: block;">
+                <input type="hidden" id="bookTitle" name="bookTitle" />
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="PaymentModal" class="payment-modal" style="display: none;">
+        <div class="payment-modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3>Payment</h3>
+            <form id="paymentForm" method="post" action="ProcessPayment" onsubmit="return validatePaymentForm()"autocomplete="off">
+                <!-- Hidden input for action type -->
+                <input type="hidden" id="actionType" name="actionType" />
+
+
+                <input type="hidden" id="BookTitle" name="BookTitle" />
+
+                <div class="Label1">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" maxlength="16" pattern="\d{16}" required
+                        placeholder="1234567812345678" autocomplete="off"/>
+                </div>
+
+                <div class="Label1">
+                    <label for="ID">ID:</label>
+                    <input type="number" id="ID" name="ID" required placeholder="Your ID" autocomplete="off"/>
+                </div>
+
+                <div class="Label1">
+                    <label for="ExDate">Expire Date:</label>
+                    <input type="text" id="ExDate" name="ExDate" pattern="(0[1-9]|1[0-2])\/\d{2}" required
+                        placeholder="MM/YY" autocomplete="off"/>
+                </div>
+
+                <div class="Label1">
+                    <label for="CVV">CVV:</label>
+                    <input type="text" id="CVV" name="CVV" maxlength="4" pattern="\d{3,4}" required placeholder="123" autocomplete="off"/>
+                </div>
+
+                <button type="submit" style="background-color: green; color: aliceblue; padding: 8px;">Save
+                    Changes</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        // Reset all filters and sorting
+        function resetFiltersAndSort() {
+            // Reset the search input
+            document.getElementById('search').value = '';
+
+            // Reset the genre filter to 'All'
+            const genreRadios = document.getElementsByName('genre');
+            genreRadios.forEach(radio => {
+                radio.checked = radio.value === 'all';
+            });
+
+            // Reset the author filter to 'All'
+            const authorRadios = document.getElementsByName('author');
+            authorRadios.forEach(radio => {
+                radio.checked = radio.value === 'all';
+            });
+
+            // Reset the additional filters
+            const bookFilterRadios = document.getElementsByName('bookFilter');
+            bookFilterRadios.forEach(radio => {
+                radio.checked = radio.value === 'all';
+            });
+
+            // Reset the price range inputs
+            document.getElementById('minPrice').value = 0;
+            document.getElementById('maxPrice').value = 1000;
+
+            // Reset the sorting dropdown to default
+            document.getElementById('sortOptions').value = 'default';
+
+            // Apply the reset filters and sorting
+            filterBooks(); // This will reset the books display based on default filters
+            sortBooks();   // This will reset the books display based on default sorting
+        }
+
+
+        // Filters and sorting logic
+        function filterBooks() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const genreValue = document.querySelector('input[name="genre"]:checked').value;
+            const authorValue = document.querySelector('input[name="author"]:checked').value;
+            const bookFilter1Value = document.querySelector('input[name="bookFilter1"]:checked').value; // Buy-Only Filter
+            const bookFilter2Value = document.querySelector('input[name="bookFilter2"]:checked').value; // Discounted Filter
+            const minPrice = parseFloat(document.getElementById('minPrice').value) || 0;
+            const maxPrice = parseFloat(document.getElementById('maxPrice').value) || 1000;
+            const sortValue = document.getElementById('sortOptions').value;
+
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                const genre = card.getAttribute('data-genre');
+                const author = card.getAttribute('data-author');
+                const price = parseFloat(card.getAttribute('data-price'));  // Original price
+                const discountedPrice = parseFloat(card.getAttribute('data-discounted-price'));  // Discounted price
+                const isBuyOnly = card.getAttribute('data-is-buy-only') === 'true';
+
+                // Filter by search term (title)
+                const matchesSearch = title.includes(searchValue);
+
+                // Filter by genre
+                const matchesGenre = genreValue === 'all' || genre === genreValue;
+
+                // Filter by author
+                const matchesAuthor = authorValue === 'all' || author === authorValue;
+
+                // Filter by Buy-Only status
+                let matchesBuyOnly = true;
+                if (bookFilter1Value === 'buyOnly') {
+                    matchesBuyOnly = isBuyOnly; // Only show buy-only books
+                }
+
+                // Filter by Discounted status
+                let matchesDiscounted = true;
+                if (bookFilter2Value === 'discounted') {
+                    matchesDiscounted = discountedPrice < price; // Show books with discounts
+                }
+
+                // Filter by price range
+                const matchesPrice = (price >= minPrice && price <= maxPrice) ||
+                    (discountedPrice >= minPrice && discountedPrice <= maxPrice);
+
+                // Check if the card matches all filters
+                if (matchesSearch && matchesGenre && matchesAuthor && matchesBuyOnly && matchesDiscounted && matchesPrice) {
+                    card.style.display = 'block'; // Show matching card
+                } else {
+                    card.style.display = 'none'; // Hide non-matching card
+                }
+            });
+
+            // Apply sorting (if any)
+            sortBooks(sortValue);
+        }
+
+
+
+
+        function sortBooks(option) {
+            const container = document.querySelector(".cardContainer");
+            const books = Array.from(container.children);
+
+            books.sort((a, b) => {
+                const priceA = parseFloat(a.dataset.price);
+                const priceB = parseFloat(b.dataset.price);
+                const yearA = parseInt(a.dataset.year);
+                const yearB = parseInt(b.dataset.year);
+
+                if (option === "priceAsc") return priceA - priceB;
+                if (option === "priceDesc") return priceB - priceA;
+                if (option === "year") return yearB - yearA;
+                return 0;
+            });
+
+            // Re-append sorted books
+            books.forEach((book) => container.appendChild(book));
+        }
+
+        function openFilterSortModal() {
+            document.getElementById("filterSortModal").style.display = "block";
+        }
+
+        function closeFilterSortModal() {
+            document.getElementById("filterSortModal").style.display = "none";
+        }
+
+        // Initialize filters on page load
+        document.addEventListener("DOMContentLoaded", () => {
+            filterBooks();
+            document.getElementById("sortOptions").addEventListener("change", filterBooks);
+        });
+
+
+
+
+        function openWaitingListModal(bookTitle) {
+            // Set the book title in the modal
+            document.getElementById("bookTitleDisplay").textContent = bookTitle;
+            document.getElementById("bookTitle").value = bookTitle;
+
+            // Make an AJAX request to get the number of people in the waiting list for this book
+            fetch(`/Books/GetWaitingListCount?bookTitle=${encodeURIComponent(bookTitle)}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text(); // Get the response as text (number as string)
+                })
+                .then(data => {
+                    // Calculate the wait time (days) based on the waiting count
+                    const waitingCount = parseInt(data, 10);
+                    const waitDays = waitingCount * 30;  // Multiply by 30 to calculate wait days
+
+                    // Display the calculated days in the modal
+                    const message = `There are ${waitingCount} people ahead of you in the waiting list. You will likely have to wait for ${waitDays} days. Are you sure you want to join the waiting list?`;
+
+                    // Set the message inside the modal (update an element with id "waitingListMessage")
+                    document.getElementById("waitingListMessage").textContent = message;
+
+                    // Show the modal
+                    document.getElementById("WaitingListModal").style.display = "flex";
+
+                    // When the user confirms the action, submit the form
+                    document.getElementById("confirmButton").addEventListener('click', function () {
+                        document.getElementById("waitingListForm").submit();
+                    });
+                })
+                .catch(error => {
+                });
+        }
+
+
+
+
+
+
+
+        function closeWaitingListModal() {
+            document.getElementById("WaitingListModal").style.display = "none";
+        }
+        // Close modal function
+        function closemodal() {
+            document.getElementById("WaitingListModal").style.display = "none";
+        }
+
+
+
+
+
+
+
+        // Payment Validation
+        function validatePaymentForm() {
+            const cardNumber = document.getElementById('cardNumber').value;
+            const exDate = document.getElementById('ExDate').value;
+            const cvv = document.getElementById('CVV').value;
+
+            // Validate card number length
+            if (cardNumber.length !== 16 || !/^\d{16}$/.test(cardNumber)) {
+                alert('Card number must be exactly 16 digits.');
+                return false;
+            }
+
+            // Validate expiration date is in MM/YY format and in the future
+            if (!isValidExpirationDate(exDate)) {
+                alert('Invalid expiration date. Please use MM/YY format and ensure the date is in the future.');
+                return false;
+            }
+
+            // Validate CVV (3 or 4 digits)
+            if (!/^\d{3,4}$/.test(cvv)) {
+                alert('Invalid CVV. Please enter 3 or 4 digits.');
+                return false;
+            }
+
+            return true;
+        }
+
+        function isValidExpirationDate(exDate) {
+            const today = new Date();
+            const [month, year] = exDate.split('/').map(Number);
+
+            if (!month || !year || month < 1 || month > 12) return false;
+
+            const expirationDate = new Date(`20${year}`, month - 1);
+            return expirationDate >= today;
+        }
+
+        // Book Filtering Functions
+
+
+        // Modal and Error Handling
+        function openEditModal(actionType, bookTitle) {
+            document.getElementById("actionType").value = actionType;
+            document.getElementById("BookTitle").value = bookTitle;
+            document.getElementById("PaymentModal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("PaymentModal").style.display = "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const errorMessageModal = document.getElementById("errorMessageModal");
+            if (errorMessageModal) {
+                errorMessageModal.style.display = "flex"; // Show the modal if it exists
+            }
+        });
+
+        function closeErrorModal() {
+            const errorMessageModal = document.getElementById("errorMessageModal");
+            if (errorMessageModal) {
+                errorMessageModal.style.display = "none"; // Hide the modal
+            }
+        }
+    </script>
+
+    <style>
+        /* Style for the close button inside the modal */
+        /* Modal background overlay */
+        .waiting-list-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            /* Ensure modal is on top */
+        }
+
+        /* Modal content (the window itself) */
+        .waiting-list-modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            /* Ensure close button is positioned correctly */
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #000;
+        }
+
+        /* Exit button inside modal */
+        .waiting-list-modal button.exit-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .waiting-list-modal button.exit-btn:hover {
+            background-color: darkred;
+        }
+
+        /* Other modal button styles */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+        .star {
+            font-size: 24px;
+            color: #e0e0e0;
+            /* Light gray for empty stars */
+        }
+
+        .star.filled {
+            color: #FFD700;
+            /* Gold for filled stars */
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            min-height: 450px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin: 15px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .book-image {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .book-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .book-image img {
+            opacity: 0.3;
+        }
+
+        .book-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            /* Allow dynamic height for details */
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            font-size: 16px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .card:hover .book-details {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .book-details h3,
+        .book-details p {
+            margin: 5px 0;
+            padding: 0;
+            color: white;
+        }
+
+        .book-details p {
+            word-wrap: break-word;
+        }
+
+        .Buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            /* Keeps buttons separate from content */
+        }
+
+        .Buttons button,
+        .Buttons form button {
+            background-color: rgb(49, 177, 49);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .Buttons button:hover,
+        .Buttons form button:hover {
+            transform: scale(1.05);
+            background-color: #36a836;
+        }
+
+        .card.out-of-stock {
+            opacity: 0.7;
+        }
+
+        .cardContainer {
+            margin: 15px auto;
+            background-color: #ffffff;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            max-width: 1200px;
+        }
+
+
+
+        .Label1 {
+            display: flex;
+        }
+
+        .payment-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .payment-modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            font-family: "Arial", sans-serif;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+
+        .Buttons {
+            margin-top: 20px;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+
+        .Buttons button {
+            background-color: rgb(49, 177, 49);
+            color: #fff;
+            margin: 5px;
+            display: block;
+            padding: 8px;
+            width: 100%;
+            border-radius: 3px;
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .Buttons button:hover {
+            transform: scale(1.1);
+        }
+
+        .Buttons form button {
+            background-color: rgb(216, 211, 211);
+            margin: 5px;
+            display: block;
+            width: 100%;
+            padding: 8px;
+            border-radius: 3px;
+            border: none;
+        }
+
+        .Buttons form button:hover {
+            transform: scale(1.1);
+        }
+
+        input {
+            padding: 4px;
+            margin: 5px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-button {
+            background-color: #007bff;
+            /* Primary Blue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-button:hover {
+            background-color: #0056b3;
+            /* Darker Blue */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .search input:focus {
+            box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+            border-color: #007bff;
+        }
+
+        .search i {
+            color: #007bff;
+            font-size: 1.5rem;
+        }
+
+        .filter-button {
+            background-color: #007bff;
+            /* Primary Blue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-button:hover {
+            background-color: #0056b3;
+            /* Darker Blue */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+    </style>
+
+
+
+
+
+
+</main>

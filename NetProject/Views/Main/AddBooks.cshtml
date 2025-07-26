@@ -1,0 +1,173 @@
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+<link href="~/css/Users.css?v=2.0" rel="stylesheet" />
+
+@model NetProject.Models.Book;
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<main>
+
+    @if (TempData["Message"] != null || TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+                <p>@(TempData["Message"] ?? TempData["ErrorMessage"])</p>
+            </div>
+        </div>
+    }
+
+    <!-- Success/Error Message Modal -->
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div id="messageModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <p>@TempData["ErrorMessage"]</p>
+            </div>
+        </div>
+    }
+
+    <form action="/Books/AddBooks" method="post" enctype="multipart/form-data">
+        <div class="container">
+            <div class="iconLabel">
+                <label for="title">Title</label>
+            </div>
+            <input type="text" name="title" id="title" />
+
+            <div class="iconLabel">
+                <label for="publishYear">Publish Year</label>
+            </div>
+            <input type="number" name="publishYear" id="publishYear" />
+
+            <div class="iconLabel">
+                <label for="author">Author</label>
+            </div>
+            <input type="text" name="author" id="author" />
+
+            <div class="iconLabel">
+                <label for="PurchasePrice">Purchase Price</label>
+            </div>
+            <input type="number" name="PurchasePrice" id="PurchasePrice" />
+
+            <div class="iconLabel">
+                <label for="LoanPrice">Loan Price</label>
+            </div>
+            <input type="number" name="LoanPrice" id="LoanPrice" />
+
+            <div class="iconLabel">
+                <label for="publisher">publisher</label>
+            </div>
+            <input type="text" name="publisher" id="publisher" />
+
+            <div class="iconLabel">
+                <label for="genre">genre</label>
+            </div>
+            <input type="text" name="genre" id="genre" />
+
+            <div class="iconLabel">
+                <label for="isBuyOnly">isBuyOnly</label>
+            </div>
+            <input type="checkbox" name="isBuyOnly" id="isBuyOnly" />
+
+
+
+
+            <div class="iconLabel">
+                <label for="CoverImage">CoverImage</label>
+            </div>
+            <input type="file" name="CoverImage" id="CoverImage" />
+
+            <div class="iconLabel">
+                <label for="PdfFile">PDF File</label>
+            </div>
+            <input type="file" name="PdfFile" id="PdfFile" />
+
+            <div class="iconLabel">
+                <label for="MobiFile">MOBI File</label>
+            </div>
+            <input type="file" name="MobiFile" id="MobiFile" />
+
+            <div class="iconLabel">
+                <label for="EpubFile">EPUB File</label>
+            </div>
+            <input type="file" name="EpubFile" id="EpubFile" />
+
+            <div class="iconLabel">
+                <label for="Fb2File">FB2 File</label>
+            </div>
+            <input type="file" name="Fb2File" id="Fb2File" />
+
+
+            <input type="submit" class="submit" value="Add Book">
+        </div>
+    </form>
+</main>
+
+<!-- Modal CSS -->
+<style>
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black background with transparency */
+        padding-top: 60px;
+        /* Space from top */
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Width of the modal */
+        max-width: 400px;
+        /* Max width of the modal */
+        text-align: center;
+    }
+
+    .close-btn {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close-btn:hover,
+    .close-btn:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Modal JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const errorMessageModal = document.getElementById("errorMessageModal");
+        if (errorMessageModal) {
+            errorMessageModal.style.display = "flex"; // Show the modal if it exists
+        }
+    });
+
+    function closeErrorModal() {
+        const errorMessageModal = document.getElementById("errorMessageModal");
+        if (errorMessageModal) {
+            errorMessageModal.style.display = "none"; // Hide the modal
+        }
+    }
+</script>

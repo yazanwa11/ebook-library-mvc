@@ -1,0 +1,197 @@
+@using NetProject.Models
+<link rel="stylesheet" href="/css/books.css?v=2.0">
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+@model NetProject.ViewModel.AllBooksModel;
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<main>
+
+    @if (TempData["Message"] != null || TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+                <p>@(TempData["Message"] ?? TempData["ErrorMessage"])</p>
+            </div>
+        </div>
+    }
+
+
+    <div class="search">
+        <h3>Here you can search for your favorite books</h3>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="search" placeholder="Search by title..." oninput="filterBooks()" />
+    </div>
+
+    <div class="cardContainer">
+        @foreach (Book book in Model.allBooks)
+        {
+            <div class="card" data-title="@book.title" data-genre="@book.genre" data-price="@book.PurchasePrice"
+                data-year="@book.publishYear">
+                <div class="book-image">
+                    <img src="@book.CoverImage" alt="@book.title" class="book-cover" />
+                </div>
+                <div class="book-details">
+                    <h3>@book.title</h3>
+                    <p>Author: @book.author</p>
+                    <p>Year: @book.publishYear</p>
+                    <p>Publisher: @book.publisher</p>
+                    <p>Genre: @book.genre</p>
+
+                    <div class="Buttons">
+                        <form action="@Url.Action("LoginView","Users")" method="post">
+                            <button type="submit">Buy/Loan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</main>
+
+<script>
+    // Function to filter books based on search input
+    function filterBooks() {
+        const searchQuery = document.getElementById("search").value.toLowerCase();
+        const books = document.querySelectorAll(".card");
+
+        books.forEach(book => {
+            const title = book.getAttribute("data-title").toLowerCase();
+            // Show book if title matches search query
+            if (title.includes(searchQuery)) {
+                book.style.display = "block";
+            } else {
+                book.style.display = "none";
+            }
+        });
+    }
+
+    document.querySelector(".close-btn").onclick = function () {
+        document.getElementById("errorMessageModal").style.display = "none";
+    }
+
+</script>
+
+<style>
+    .card {
+        position: relative;
+        width: 300px;
+        /* Fixed width */
+        min-height: 400px;
+        /* Set a minimum height for consistency */
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        margin: 15px;
+        /* Space between cards */
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        /* Allows the card to expand vertically based on content */
+        background-color: #fff;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        /* Slight zoom effect on hover */
+    }
+
+    .book-image {
+        position: relative;
+        width: 100%;
+        flex-grow: 1;
+        /* This ensures the image takes up the remaining height of the card */
+        overflow: hidden;
+    }
+
+    .book-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Ensures the image covers the full area */
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover .book-image img {
+        opacity: 0.3;
+        /* Fade the image on hover */
+    }
+
+    .book-details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        /* Increase padding for spacing */
+        background: rgba(0, 0, 0, 0.7);
+        /* Semi-transparent background */
+        color: white;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        font-size: 16px;
+        /* Ensure font is large enough for readability */
+        line-height: 1.5;
+        /* Improve text line spacing for better readability */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        /* Add a slight shadow to make text pop */
+    }
+
+    .card:hover .book-details {
+        opacity: 1;
+        /* Make details visible on hover */
+        pointer-events: auto;
+    }
+
+    .book-details h3,
+    .book-details p {
+        color: white;
+        /* Ensure text in <h> and <p> is white */
+        margin: 0;
+        /* Remove margin to prevent extra space */
+        padding: 5px 0;
+        /* Add some padding for spacing */
+    }
+
+    .card.out-of-stock {
+        opacity: 0.7;
+    }
+
+    .cardContainer {
+        margin: 15px auto;
+        /* Center the container */
+        background-color: #ffffff;
+        /* Set a clean, white background */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 40px;
+        /* Reduced padding for a tighter design */
+        border-radius: 12px;
+        /* Add rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        /* Subtle box shadow */
+        max-width: 1200px;
+    }
+
+    .Buttons form button {
+        background-color: rgb(216, 211, 211);
+        margin: 5px;
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: none;
+    }
+
+    .Buttons form button:hover {
+        transform: scale(1.1);
+    }
+</style>

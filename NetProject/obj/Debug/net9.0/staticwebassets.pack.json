@@ -1,0 +1,1133 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\css\\Books.css",
+      "PackagePath": "staticwebassets\\css\\Books.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\css\\Cart.css",
+      "PackagePath": "staticwebassets\\css\\Cart.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\css\\Profile.css",
+      "PackagePath": "staticwebassets\\css\\Profile.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\css\\Users.css",
+      "PackagePath": "staticwebassets\\css\\Users.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\06acdee2-3d3f-4628-8e5e-c4e5133859bd.epub",
+      "PackagePath": "staticwebassets\\epub\\06acdee2-3d3f-4628-8e5e-c4e5133859bd.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\08b8b4f3-beeb-439e-8693-c3087c34b9ef.epub",
+      "PackagePath": "staticwebassets\\epub\\08b8b4f3-beeb-439e-8693-c3087c34b9ef.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\0dc5656c-6e49-46b5-8799-0b135d610e09.epub",
+      "PackagePath": "staticwebassets\\epub\\0dc5656c-6e49-46b5-8799-0b135d610e09.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\174e2294-d4f5-4ddb-a690-1be2beeba3d4.epub",
+      "PackagePath": "staticwebassets\\epub\\174e2294-d4f5-4ddb-a690-1be2beeba3d4.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\1cca2259-373d-46e9-9bd0-a5299f72e7a4.epub",
+      "PackagePath": "staticwebassets\\epub\\1cca2259-373d-46e9-9bd0-a5299f72e7a4.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\23be921e-b483-4536-a5c2-0873dadfd374.epub",
+      "PackagePath": "staticwebassets\\epub\\23be921e-b483-4536-a5c2-0873dadfd374.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\283dbeb7-7f37-4869-9f0d-b5d5f6de92ff.epub",
+      "PackagePath": "staticwebassets\\epub\\283dbeb7-7f37-4869-9f0d-b5d5f6de92ff.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\315f0129-6742-4a00-96d2-718a93adaade.epub",
+      "PackagePath": "staticwebassets\\epub\\315f0129-6742-4a00-96d2-718a93adaade.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\3a0f0c9e-3dac-477c-8879-408ac98bcb99.epub",
+      "PackagePath": "staticwebassets\\epub\\3a0f0c9e-3dac-477c-8879-408ac98bcb99.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\48d6f3d3-9153-47dd-8d9e-4e26ee96bf5d.epub",
+      "PackagePath": "staticwebassets\\epub\\48d6f3d3-9153-47dd-8d9e-4e26ee96bf5d.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\4ebf30f4-1a16-45aa-9f27-f61be8eeb4c6.epub",
+      "PackagePath": "staticwebassets\\epub\\4ebf30f4-1a16-45aa-9f27-f61be8eeb4c6.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\5266aa07-6674-40bf-9b57-35ffe2ac17cd.epub",
+      "PackagePath": "staticwebassets\\epub\\5266aa07-6674-40bf-9b57-35ffe2ac17cd.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\59919417-5afc-49e1-a87e-18892fd155d8.epub",
+      "PackagePath": "staticwebassets\\epub\\59919417-5afc-49e1-a87e-18892fd155d8.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\5e7df397-63c3-4e37-a68b-705b93e0044c.epub",
+      "PackagePath": "staticwebassets\\epub\\5e7df397-63c3-4e37-a68b-705b93e0044c.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\60419d32-dfa1-405e-9816-0ee0ea87a6ff.epub",
+      "PackagePath": "staticwebassets\\epub\\60419d32-dfa1-405e-9816-0ee0ea87a6ff.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\6f533285-736e-400a-b66a-88b8de146e1d.epub",
+      "PackagePath": "staticwebassets\\epub\\6f533285-736e-400a-b66a-88b8de146e1d.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\7247bcaa-2f00-490e-9b03-ff36e41ecb44.epub",
+      "PackagePath": "staticwebassets\\epub\\7247bcaa-2f00-490e-9b03-ff36e41ecb44.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\742e607c-0086-477b-9011-25d90267b961.epub",
+      "PackagePath": "staticwebassets\\epub\\742e607c-0086-477b-9011-25d90267b961.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\747d35b4-6fb0-4810-a4ff-4a8178c6e00f.epub",
+      "PackagePath": "staticwebassets\\epub\\747d35b4-6fb0-4810-a4ff-4a8178c6e00f.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\789977f0-90be-4337-86b2-3efb3b33d293.epub",
+      "PackagePath": "staticwebassets\\epub\\789977f0-90be-4337-86b2-3efb3b33d293.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\7b1832fb-6661-4460-a93e-1c2268cdb781.epub",
+      "PackagePath": "staticwebassets\\epub\\7b1832fb-6661-4460-a93e-1c2268cdb781.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\8fa93843-2b1e-49f0-b810-4171f6e7fa93.epub",
+      "PackagePath": "staticwebassets\\epub\\8fa93843-2b1e-49f0-b810-4171f6e7fa93.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\97da87db-cc7b-4323-9183-8c696c0bf849.epub",
+      "PackagePath": "staticwebassets\\epub\\97da87db-cc7b-4323-9183-8c696c0bf849.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\a4512d11-480b-4bfc-a511-2ac3ad7b02f9.epub",
+      "PackagePath": "staticwebassets\\epub\\a4512d11-480b-4bfc-a511-2ac3ad7b02f9.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\c2e230fb-6ffb-4208-b45a-320fff340a04.epub",
+      "PackagePath": "staticwebassets\\epub\\c2e230fb-6ffb-4208-b45a-320fff340a04.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\ca36e00f-8599-4707-acf0-60e094334e2c.epub",
+      "PackagePath": "staticwebassets\\epub\\ca36e00f-8599-4707-acf0-60e094334e2c.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\d052478d-edcf-4bfb-ac4b-daaa95f7e651.epub",
+      "PackagePath": "staticwebassets\\epub\\d052478d-edcf-4bfb-ac4b-daaa95f7e651.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\d9cb733d-789b-4f14-b348-7314a51b2211.epub",
+      "PackagePath": "staticwebassets\\epub\\d9cb733d-789b-4f14-b348-7314a51b2211.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\e748212f-6cf9-4433-8b07-1c3c3cbc9902.epub",
+      "PackagePath": "staticwebassets\\epub\\e748212f-6cf9-4433-8b07-1c3c3cbc9902.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\f079ee2b-fcca-4a7f-a2b9-91a3b1d76689.epub",
+      "PackagePath": "staticwebassets\\epub\\f079ee2b-fcca-4a7f-a2b9-91a3b1d76689.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\f44388bf-62e2-4002-b3f7-21d305644ba2.epub",
+      "PackagePath": "staticwebassets\\epub\\f44388bf-62e2-4002-b3f7-21d305644ba2.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\epub\\f8834301-1b6a-4ec1-8ef7-2b1e15a8a56e.epub",
+      "PackagePath": "staticwebassets\\epub\\f8834301-1b6a-4ec1-8ef7-2b1e15a8a56e.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\060a7d7f-07e3-4995-9305-e56d68551600.fb2",
+      "PackagePath": "staticwebassets\\fb2\\060a7d7f-07e3-4995-9305-e56d68551600.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\06331999-db63-4717-be73-004dab384623.fb2",
+      "PackagePath": "staticwebassets\\fb2\\06331999-db63-4717-be73-004dab384623.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\0fed9eaa-5470-46f5-bb74-6531982c8ee8.fb2",
+      "PackagePath": "staticwebassets\\fb2\\0fed9eaa-5470-46f5-bb74-6531982c8ee8.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\10d805ea-3dbc-4637-affb-330d86eba3ba.fb2",
+      "PackagePath": "staticwebassets\\fb2\\10d805ea-3dbc-4637-affb-330d86eba3ba.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\1324612c-913d-43bc-a761-9a4cfb11d260.fb2",
+      "PackagePath": "staticwebassets\\fb2\\1324612c-913d-43bc-a761-9a4cfb11d260.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\22e39738-be06-49c0-903b-6223acdf2400.fb2",
+      "PackagePath": "staticwebassets\\fb2\\22e39738-be06-49c0-903b-6223acdf2400.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\2b7b3b2e-75b3-4cd6-9501-16463348eb31.fb2",
+      "PackagePath": "staticwebassets\\fb2\\2b7b3b2e-75b3-4cd6-9501-16463348eb31.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\354af96c-ee66-49be-bea5-eb67dbe3dcf6.fb2",
+      "PackagePath": "staticwebassets\\fb2\\354af96c-ee66-49be-bea5-eb67dbe3dcf6.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\375982f4-68f6-4b1e-9570-84280fdfa7c7.fb2",
+      "PackagePath": "staticwebassets\\fb2\\375982f4-68f6-4b1e-9570-84280fdfa7c7.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\3b576726-3748-4960-a90c-cd3140bcae58.fb2",
+      "PackagePath": "staticwebassets\\fb2\\3b576726-3748-4960-a90c-cd3140bcae58.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\4103119d-f7aa-4ef8-bf66-b69c91793cd3.fb2",
+      "PackagePath": "staticwebassets\\fb2\\4103119d-f7aa-4ef8-bf66-b69c91793cd3.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\4c087817-450e-46b3-8bf4-2b7cad8447ec.fb2",
+      "PackagePath": "staticwebassets\\fb2\\4c087817-450e-46b3-8bf4-2b7cad8447ec.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\4e1a0c60-5628-441c-8ecb-a7171efc1a15.fb2",
+      "PackagePath": "staticwebassets\\fb2\\4e1a0c60-5628-441c-8ecb-a7171efc1a15.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\59495a2b-0bef-4b06-867c-3a6e9ada8f3e.fb2",
+      "PackagePath": "staticwebassets\\fb2\\59495a2b-0bef-4b06-867c-3a6e9ada8f3e.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\667c9241-065a-4cb1-9bd5-02e49fcb29e9.fb2",
+      "PackagePath": "staticwebassets\\fb2\\667c9241-065a-4cb1-9bd5-02e49fcb29e9.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\6da78cec-6c62-44b2-b718-eca9e7666ded.fb2",
+      "PackagePath": "staticwebassets\\fb2\\6da78cec-6c62-44b2-b718-eca9e7666ded.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\6f6726c4-fab0-44cc-82cf-3d0ca04ce602.fb2",
+      "PackagePath": "staticwebassets\\fb2\\6f6726c4-fab0-44cc-82cf-3d0ca04ce602.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\7ace3981-2280-47d1-920d-9fab7decec52.fb2",
+      "PackagePath": "staticwebassets\\fb2\\7ace3981-2280-47d1-920d-9fab7decec52.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\7b8c02e2-614b-4363-affc-da4966206eed.fb2",
+      "PackagePath": "staticwebassets\\fb2\\7b8c02e2-614b-4363-affc-da4966206eed.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\8bd0335b-2509-46d7-8cb9-e0b2eccd04ce.fb2",
+      "PackagePath": "staticwebassets\\fb2\\8bd0335b-2509-46d7-8cb9-e0b2eccd04ce.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\9ab1c419-b71b-4770-b8b0-29e4b653fa69.fb2",
+      "PackagePath": "staticwebassets\\fb2\\9ab1c419-b71b-4770-b8b0-29e4b653fa69.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\a825a709-e311-42d6-9407-acff46a13666.fb2",
+      "PackagePath": "staticwebassets\\fb2\\a825a709-e311-42d6-9407-acff46a13666.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\ab13404d-2707-4741-9dc2-0f7a7d4f37db.fb2",
+      "PackagePath": "staticwebassets\\fb2\\ab13404d-2707-4741-9dc2-0f7a7d4f37db.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\bb995696-91f9-4431-a79e-3723fbd4bea3.fb2",
+      "PackagePath": "staticwebassets\\fb2\\bb995696-91f9-4431-a79e-3723fbd4bea3.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\d56329c0-2ea2-4a9d-911b-f6ec68629dcc.fb2",
+      "PackagePath": "staticwebassets\\fb2\\d56329c0-2ea2-4a9d-911b-f6ec68629dcc.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\e85819e2-ee35-48d2-adf1-8d6ef6fa8596.fb2",
+      "PackagePath": "staticwebassets\\fb2\\e85819e2-ee35-48d2-adf1-8d6ef6fa8596.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\ec172028-0bb7-420d-9eac-09a6892414ae.fb2",
+      "PackagePath": "staticwebassets\\fb2\\ec172028-0bb7-420d-9eac-09a6892414ae.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\ee1c16eb-4079-4358-a8b8-98efececf20c.fb2",
+      "PackagePath": "staticwebassets\\fb2\\ee1c16eb-4079-4358-a8b8-98efececf20c.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\f4ac2b60-efbf-44cf-8981-78d775207ebb.fb2",
+      "PackagePath": "staticwebassets\\fb2\\f4ac2b60-efbf-44cf-8981-78d775207ebb.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\fb2\\fdcd880b-4350-4667-9d83-53aad21910db.fb2",
+      "PackagePath": "staticwebassets\\fb2\\fdcd880b-4350-4667-9d83-53aad21910db.fb2"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\files\\33575a2c-d178-449c-b18a-8ebf8a03ca54_pg75076-images.epub",
+      "PackagePath": "staticwebassets\\files\\33575a2c-d178-449c-b18a-8ebf8a03ca54_pg75076-images.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\files\\7c545d26-3925-45d1-95f4-d08b35079984_pg75076-images.epub",
+      "PackagePath": "staticwebassets\\files\\7c545d26-3925-45d1-95f4-d08b35079984_pg75076-images.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\files\\92642147-3b3f-4398-9b85-5c8e5440c9c0_pg75076-images.epub",
+      "PackagePath": "staticwebassets\\files\\92642147-3b3f-4398-9b85-5c8e5440c9c0_pg75076-images.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\files\\ea3669c2-5d69-49a0-bbdc-64fe71707336_pg75076-images.epub",
+      "PackagePath": "staticwebassets\\files\\ea3669c2-5d69-49a0-bbdc-64fe71707336_pg75076-images.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\files\\pg75076-images.epub",
+      "PackagePath": "staticwebassets\\files\\pg75076-images.epub"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\0e6c6974-c15a-4397-830e-a60385bbc18c.jpg",
+      "PackagePath": "staticwebassets\\images\\0e6c6974-c15a-4397-830e-a60385bbc18c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\13e7d933-f783-45df-92a4-2d0c927e3d8e.jpg",
+      "PackagePath": "staticwebassets\\images\\13e7d933-f783-45df-92a4-2d0c927e3d8e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\2a0de0e8-36c3-4195-a3db-557f1a269683_5f0a866a-4b56-4dac-9ed7-307d7c122bd0_download (3).jpg",
+      "PackagePath": "staticwebassets\\images\\2a0de0e8-36c3-4195-a3db-557f1a269683_5f0a866a-4b56-4dac-9ed7-307d7c122bd0_download (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\2b7114cc-728a-455d-9392-a82fc43d4a1a.jpg",
+      "PackagePath": "staticwebassets\\images\\2b7114cc-728a-455d-9392-a82fc43d4a1a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\39a3240f-0484-42fc-b836-4b2ed795b9a1.jpg",
+      "PackagePath": "staticwebassets\\images\\39a3240f-0484-42fc-b836-4b2ed795b9a1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\3a912919-9517-4fd2-bacf-8a5ab8f09c2b.jpg",
+      "PackagePath": "staticwebassets\\images\\3a912919-9517-4fd2-bacf-8a5ab8f09c2b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\3d74dbb8-88d8-4b6b-a1b7-e0bdf9c734b2.jpg",
+      "PackagePath": "staticwebassets\\images\\3d74dbb8-88d8-4b6b-a1b7-e0bdf9c734b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\3fc871a2-0f6c-4c01-b147-2e212a83ebe7_42e2c0ec-efe6-4dc5-a60e-13ade3a237d8_OIP (3).jpg",
+      "PackagePath": "staticwebassets\\images\\3fc871a2-0f6c-4c01-b147-2e212a83ebe7_42e2c0ec-efe6-4dc5-a60e-13ade3a237d8_OIP (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\42e2c0ec-efe6-4dc5-a60e-13ade3a237d8_OIP (3).jpg",
+      "PackagePath": "staticwebassets\\images\\42e2c0ec-efe6-4dc5-a60e-13ade3a237d8_OIP (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\5e9f6602-886d-4357-8895-96dc8000972b_639c9a71-15d3-4321-9f1d-223e81b1e4c0_OIP (2).jpg",
+      "PackagePath": "staticwebassets\\images\\5e9f6602-886d-4357-8895-96dc8000972b_639c9a71-15d3-4321-9f1d-223e81b1e4c0_OIP (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\5f0a866a-4b56-4dac-9ed7-307d7c122bd0_download (3).jpg",
+      "PackagePath": "staticwebassets\\images\\5f0a866a-4b56-4dac-9ed7-307d7c122bd0_download (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\5fb7492c-46e9-4d79-b717-c2f7009928af.jpg",
+      "PackagePath": "staticwebassets\\images\\5fb7492c-46e9-4d79-b717-c2f7009928af.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\62a085b8-2603-4c0d-9885-acd2ee378777.jpg",
+      "PackagePath": "staticwebassets\\images\\62a085b8-2603-4c0d-9885-acd2ee378777.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\633da313-2539-4ff3-bdf4-8c46fd1a170c_OIP (1).jpg",
+      "PackagePath": "staticwebassets\\images\\633da313-2539-4ff3-bdf4-8c46fd1a170c_OIP (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\639c9a71-15d3-4321-9f1d-223e81b1e4c0_OIP (2).jpg",
+      "PackagePath": "staticwebassets\\images\\639c9a71-15d3-4321-9f1d-223e81b1e4c0_OIP (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\6b8e775d-0841-4a98-94a4-54df0e30ccf7.jpg",
+      "PackagePath": "staticwebassets\\images\\6b8e775d-0841-4a98-94a4-54df0e30ccf7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\777e053d-06f3-485b-9508-c98402e9f040.jpg",
+      "PackagePath": "staticwebassets\\images\\777e053d-06f3-485b-9508-c98402e9f040.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\822d65d5-f22a-49e4-8f66-8cee5bf1a5f6_download (2).jpg",
+      "PackagePath": "staticwebassets\\images\\822d65d5-f22a-49e4-8f66-8cee5bf1a5f6_download (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\82a32359-bf9e-4fbd-9257-3a14bd0262b9.jpg",
+      "PackagePath": "staticwebassets\\images\\82a32359-bf9e-4fbd-9257-3a14bd0262b9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\83eb9da5-d0cb-4347-9fc8-aec92174adf9.jpg",
+      "PackagePath": "staticwebassets\\images\\83eb9da5-d0cb-4347-9fc8-aec92174adf9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\875f9170-4c42-4ee9-93ba-dff33b5aa6dd.jpg",
+      "PackagePath": "staticwebassets\\images\\875f9170-4c42-4ee9-93ba-dff33b5aa6dd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\8b747021-251d-46b1-9f3c-9086a48b1ee2.jpg",
+      "PackagePath": "staticwebassets\\images\\8b747021-251d-46b1-9f3c-9086a48b1ee2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\8cabeb51-20dc-4da6-bc84-55c2fe12c459.jpg",
+      "PackagePath": "staticwebassets\\images\\8cabeb51-20dc-4da6-bc84-55c2fe12c459.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\8d6fc82f-6d47-4601-ab86-21262b3a3363_OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\8d6fc82f-6d47-4601-ab86-21262b3a3363_OIP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\939386b7-7638-4eec-b83d-cef044b57e3c.jpg",
+      "PackagePath": "staticwebassets\\images\\939386b7-7638-4eec-b83d-cef044b57e3c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\9a8786be-1742-4bd6-8ea1-845985cf8de5.jpg",
+      "PackagePath": "staticwebassets\\images\\9a8786be-1742-4bd6-8ea1-845985cf8de5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\9baccff7-e69f-40af-9e87-ffecabe092f4.jpg",
+      "PackagePath": "staticwebassets\\images\\9baccff7-e69f-40af-9e87-ffecabe092f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\9db3da64-4d47-4b0b-b5a7-204565e0d1c1_download (1).jpg",
+      "PackagePath": "staticwebassets\\images\\9db3da64-4d47-4b0b-b5a7-204565e0d1c1_download (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (1).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (10).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (10).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (11).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (11).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (12).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (12).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (13).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (13).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (14).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (14).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (15).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (15).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (16).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (16).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (17).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (17).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (18).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (18).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (19).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (19).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (2).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (3).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (4).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (5).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (5).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (6).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (6).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (7).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (7).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (8).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (8).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP (9).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (9).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\OIP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\R.jpg",
+      "PackagePath": "staticwebassets\\images\\R.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\a4ba1ea7-f6b4-49a1-b956-5b7180ca805e.jpg",
+      "PackagePath": "staticwebassets\\images\\a4ba1ea7-f6b4-49a1-b956-5b7180ca805e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\a8d81260-df92-4131-910d-033f3bbf211d.jpg",
+      "PackagePath": "staticwebassets\\images\\a8d81260-df92-4131-910d-033f3bbf211d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\aa46a040-7465-4fcc-b9b6-acb109507f0b.jpg",
+      "PackagePath": "staticwebassets\\images\\aa46a040-7465-4fcc-b9b6-acb109507f0b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\b0ebb26c-6986-49a8-a6ec-d7cbfe76dc9f.jpg",
+      "PackagePath": "staticwebassets\\images\\b0ebb26c-6986-49a8-a6ec-d7cbfe76dc9f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\b5e87075-cee2-4e5e-9d29-00fb39b01be5.jpg",
+      "PackagePath": "staticwebassets\\images\\b5e87075-cee2-4e5e-9d29-00fb39b01be5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\bae10ee3-11f1-4b29-9ba3-1cb6fbf67e0b.jpg",
+      "PackagePath": "staticwebassets\\images\\bae10ee3-11f1-4b29-9ba3-1cb6fbf67e0b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\ce8ac784-b93d-4e1e-b026-f6996f3e8b2d.jpg",
+      "PackagePath": "staticwebassets\\images\\ce8ac784-b93d-4e1e-b026-f6996f3e8b2d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\d00b9523-d90b-418f-af88-73b1314b29a1.jpg",
+      "PackagePath": "staticwebassets\\images\\d00b9523-d90b-418f-af88-73b1314b29a1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\d3755cb8-771f-4c73-bad3-bde289c5fb23_5f0a866a-4b56-4dac-9ed7-307d7c122bd0_download (3).jpg",
+      "PackagePath": "staticwebassets\\images\\d3755cb8-771f-4c73-bad3-bde289c5fb23_5f0a866a-4b56-4dac-9ed7-307d7c122bd0_download (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\dd9be808-037b-4cda-bdd7-3f8cd088224f.jpg",
+      "PackagePath": "staticwebassets\\images\\dd9be808-037b-4cda-bdd7-3f8cd088224f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\df92d3f3-d69f-48de-91f5-d443685c99ab_download.jpg",
+      "PackagePath": "staticwebassets\\images\\df92d3f3-d69f-48de-91f5-d443685c99ab_download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (1).jpg",
+      "PackagePath": "staticwebassets\\images\\download (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (10).jpg",
+      "PackagePath": "staticwebassets\\images\\download (10).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (2).jpg",
+      "PackagePath": "staticwebassets\\images\\download (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (3).jpg",
+      "PackagePath": "staticwebassets\\images\\download (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (4).jpg",
+      "PackagePath": "staticwebassets\\images\\download (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (5).jpg",
+      "PackagePath": "staticwebassets\\images\\download (5).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (6).jpg",
+      "PackagePath": "staticwebassets\\images\\download (6).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (7).jpg",
+      "PackagePath": "staticwebassets\\images\\download (7).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (8).jpg",
+      "PackagePath": "staticwebassets\\images\\download (8).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download (9).jpg",
+      "PackagePath": "staticwebassets\\images\\download (9).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\download.jpg",
+      "PackagePath": "staticwebassets\\images\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\e0b6a973-30da-4a2f-b76b-580e8e92c869_df92d3f3-d69f-48de-91f5-d443685c99ab_download.jpg",
+      "PackagePath": "staticwebassets\\images\\e0b6a973-30da-4a2f-b76b-580e8e92c869_df92d3f3-d69f-48de-91f5-d443685c99ab_download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\e8f754aa-9c61-46a8-9e99-67a21dcb2a8c.jpg",
+      "PackagePath": "staticwebassets\\images\\e8f754aa-9c61-46a8-9e99-67a21dcb2a8c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\ec307dbc-b17c-4246-9dc3-80b119b0ddb3.jpg",
+      "PackagePath": "staticwebassets\\images\\ec307dbc-b17c-4246-9dc3-80b119b0ddb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\ed80a522-7c63-47ad-835d-130ff7e30b20.jpg",
+      "PackagePath": "staticwebassets\\images\\ed80a522-7c63-47ad-835d-130ff7e30b20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\ee25413d-6dfb-4781-b30c-b7c51622be6b_OIP (1).jpg",
+      "PackagePath": "staticwebassets\\images\\ee25413d-6dfb-4781-b30c-b7c51622be6b_OIP (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\f4ef6cf6-5932-4c20-9719-64ecf1b46966_download (4).jpg",
+      "PackagePath": "staticwebassets\\images\\f4ef6cf6-5932-4c20-9719-64ecf1b46966_download (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\f8373f2d-7b4b-4669-b55f-18d7dd8f7f20.jpg",
+      "PackagePath": "staticwebassets\\images\\f8373f2d-7b4b-4669-b55f-18d7dd8f7f20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\images\\fa086fb8-9fa9-4203-b214-173202962ab3.jpg",
+      "PackagePath": "staticwebassets\\images\\fa086fb8-9fa9-4203-b214-173202962ab3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\0dc87fe6-8c47-4bf5-b7ad-2e2acac28344.mobi",
+      "PackagePath": "staticwebassets\\mobi\\0dc87fe6-8c47-4bf5-b7ad-2e2acac28344.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\0f1a4f1a-b492-45ca-8094-a35aac84cf13.mobi",
+      "PackagePath": "staticwebassets\\mobi\\0f1a4f1a-b492-45ca-8094-a35aac84cf13.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\1d0299db-1e3e-4de8-80e6-3f67da6c2fbf.mobi",
+      "PackagePath": "staticwebassets\\mobi\\1d0299db-1e3e-4de8-80e6-3f67da6c2fbf.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\274e375e-e11b-4eba-811e-523c32ed1e1c.mobi",
+      "PackagePath": "staticwebassets\\mobi\\274e375e-e11b-4eba-811e-523c32ed1e1c.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\28402201-f0f5-4c6b-89ba-9eeff19db89f.mobi",
+      "PackagePath": "staticwebassets\\mobi\\28402201-f0f5-4c6b-89ba-9eeff19db89f.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\2e11e752-977a-4942-9652-e3f8006f93a5.mobi",
+      "PackagePath": "staticwebassets\\mobi\\2e11e752-977a-4942-9652-e3f8006f93a5.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\358789bd-df74-44b9-b2b7-e1a73243fee7.mobi",
+      "PackagePath": "staticwebassets\\mobi\\358789bd-df74-44b9-b2b7-e1a73243fee7.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\3b3e62b5-4da7-4bd2-878b-5128c6b2042b.mobi",
+      "PackagePath": "staticwebassets\\mobi\\3b3e62b5-4da7-4bd2-878b-5128c6b2042b.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\3cb73f68-09ac-4618-ad95-435f9d3e1f7c.mobi",
+      "PackagePath": "staticwebassets\\mobi\\3cb73f68-09ac-4618-ad95-435f9d3e1f7c.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\41756c67-fdbf-470e-8e49-dc914ef034be.mobi",
+      "PackagePath": "staticwebassets\\mobi\\41756c67-fdbf-470e-8e49-dc914ef034be.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\41cb9987-6e00-4f6c-b7ff-a4562efeb940.mobi",
+      "PackagePath": "staticwebassets\\mobi\\41cb9987-6e00-4f6c-b7ff-a4562efeb940.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\466bbd91-0be8-4477-9148-10ab018a47f2.mobi",
+      "PackagePath": "staticwebassets\\mobi\\466bbd91-0be8-4477-9148-10ab018a47f2.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\4ad345d5-7c2d-43f0-8d91-bb6a1f9bde9f.mobi",
+      "PackagePath": "staticwebassets\\mobi\\4ad345d5-7c2d-43f0-8d91-bb6a1f9bde9f.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\5760dc9e-1702-4c94-b1cc-a3fe088311d2.mobi",
+      "PackagePath": "staticwebassets\\mobi\\5760dc9e-1702-4c94-b1cc-a3fe088311d2.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\5b0b3f20-0e5a-4d84-8f48-d332544e690c.mobi",
+      "PackagePath": "staticwebassets\\mobi\\5b0b3f20-0e5a-4d84-8f48-d332544e690c.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\613c3f46-7762-4af4-bace-4597c5b6de9d.mobi",
+      "PackagePath": "staticwebassets\\mobi\\613c3f46-7762-4af4-bace-4597c5b6de9d.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\6abe588b-f465-4856-96e6-1540fab64a45.mobi",
+      "PackagePath": "staticwebassets\\mobi\\6abe588b-f465-4856-96e6-1540fab64a45.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\768e37d3-6034-4095-a6d5-69e6c397cda6.mobi",
+      "PackagePath": "staticwebassets\\mobi\\768e37d3-6034-4095-a6d5-69e6c397cda6.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\779d8387-ce66-4ae1-8f68-9afa89c95469.mobi",
+      "PackagePath": "staticwebassets\\mobi\\779d8387-ce66-4ae1-8f68-9afa89c95469.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\78f602cc-f3a1-40ca-8a8d-e3639a3a4b02.mobi",
+      "PackagePath": "staticwebassets\\mobi\\78f602cc-f3a1-40ca-8a8d-e3639a3a4b02.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\7f4165da-ebd7-40bc-8fd8-250f08b1e6ca.mobi",
+      "PackagePath": "staticwebassets\\mobi\\7f4165da-ebd7-40bc-8fd8-250f08b1e6ca.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\a7430d5f-e75b-49d5-90cd-fe219d40fa81.mobi",
+      "PackagePath": "staticwebassets\\mobi\\a7430d5f-e75b-49d5-90cd-fe219d40fa81.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\b84ac15d-5b91-457c-94ef-180f24a28ce4.mobi",
+      "PackagePath": "staticwebassets\\mobi\\b84ac15d-5b91-457c-94ef-180f24a28ce4.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\b9edc4b7-347b-4ee7-a2d4-c3dba1e7b9d0.mobi",
+      "PackagePath": "staticwebassets\\mobi\\b9edc4b7-347b-4ee7-a2d4-c3dba1e7b9d0.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\bea9b27b-e800-4d7d-acf6-14ad16e31bfb.mobi",
+      "PackagePath": "staticwebassets\\mobi\\bea9b27b-e800-4d7d-acf6-14ad16e31bfb.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\c0fc0a87-f749-4ee5-8060-dbee7debdf48.mobi",
+      "PackagePath": "staticwebassets\\mobi\\c0fc0a87-f749-4ee5-8060-dbee7debdf48.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\d0869425-3533-4d44-88bd-711275c7fd6d.mobi",
+      "PackagePath": "staticwebassets\\mobi\\d0869425-3533-4d44-88bd-711275c7fd6d.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\d3f6bf1b-0b75-488c-9c4a-fbba9d1c8553.mobi",
+      "PackagePath": "staticwebassets\\mobi\\d3f6bf1b-0b75-488c-9c4a-fbba9d1c8553.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\d94c051e-9965-4bb0-801a-3adca8f12aaf.mobi",
+      "PackagePath": "staticwebassets\\mobi\\d94c051e-9965-4bb0-801a-3adca8f12aaf.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\dc1df43e-950c-44f2-9444-3298e6a8d99c.mobi",
+      "PackagePath": "staticwebassets\\mobi\\dc1df43e-950c-44f2-9444-3298e6a8d99c.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\dca382bc-85f5-46ec-84e4-014864ca0cb4.mobi",
+      "PackagePath": "staticwebassets\\mobi\\dca382bc-85f5-46ec-84e4-014864ca0cb4.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\mobi\\e852b7a6-e497-46f0-aa5b-2f5a01883cc0.mobi",
+      "PackagePath": "staticwebassets\\mobi\\e852b7a6-e497-46f0-aa5b-2f5a01883cc0.mobi"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\1000059a-f3ed-499b-b3f6-a7c2861ac255.pdf",
+      "PackagePath": "staticwebassets\\pdf\\1000059a-f3ed-499b-b3f6-a7c2861ac255.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\14881039-2890-49c8-ba39-14fa923b282a.pdf",
+      "PackagePath": "staticwebassets\\pdf\\14881039-2890-49c8-ba39-14fa923b282a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\25465f9f-a21b-48c6-b224-1360881348ba.pdf",
+      "PackagePath": "staticwebassets\\pdf\\25465f9f-a21b-48c6-b224-1360881348ba.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\26f2e7b8-aca9-439f-b732-0afc16ab8088.pdf",
+      "PackagePath": "staticwebassets\\pdf\\26f2e7b8-aca9-439f-b732-0afc16ab8088.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\2a105a04-6547-46e2-81e5-ac715813cb8a.pdf",
+      "PackagePath": "staticwebassets\\pdf\\2a105a04-6547-46e2-81e5-ac715813cb8a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\3b8cd46d-7d7e-49d5-a96f-8c2db2235b3c.pdf",
+      "PackagePath": "staticwebassets\\pdf\\3b8cd46d-7d7e-49d5-a96f-8c2db2235b3c.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\46039987-a7d4-4daf-8863-a9c95d0ad8dc.pdf",
+      "PackagePath": "staticwebassets\\pdf\\46039987-a7d4-4daf-8863-a9c95d0ad8dc.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\4f388415-fa1b-406f-baea-bf369b1453d4.pdf",
+      "PackagePath": "staticwebassets\\pdf\\4f388415-fa1b-406f-baea-bf369b1453d4.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\501df4ef-25a5-479b-9c02-fd68ca0564e3.pdf",
+      "PackagePath": "staticwebassets\\pdf\\501df4ef-25a5-479b-9c02-fd68ca0564e3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\6fbd5ad0-3a45-42b2-825c-80a9f55b261c.pdf",
+      "PackagePath": "staticwebassets\\pdf\\6fbd5ad0-3a45-42b2-825c-80a9f55b261c.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\73f3b596-1469-408b-9b95-c7936cc545c3.pdf",
+      "PackagePath": "staticwebassets\\pdf\\73f3b596-1469-408b-9b95-c7936cc545c3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\77de8bd7-94d3-4fef-a656-cb626aacbbc6.pdf",
+      "PackagePath": "staticwebassets\\pdf\\77de8bd7-94d3-4fef-a656-cb626aacbbc6.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\812afc70-991d-4622-a46b-76320ae85813.pdf",
+      "PackagePath": "staticwebassets\\pdf\\812afc70-991d-4622-a46b-76320ae85813.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\873041e0-ade6-45ce-89ad-827ef85207fe.pdf",
+      "PackagePath": "staticwebassets\\pdf\\873041e0-ade6-45ce-89ad-827ef85207fe.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\8e28dff8-551c-42d4-b48c-c4fcb56e0185.pdf",
+      "PackagePath": "staticwebassets\\pdf\\8e28dff8-551c-42d4-b48c-c4fcb56e0185.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\91a6ddd8-d2a3-4fa1-96a0-d382a19759f9.pdf",
+      "PackagePath": "staticwebassets\\pdf\\91a6ddd8-d2a3-4fa1-96a0-d382a19759f9.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\957e6254-b9c4-4797-8562-b1031b092d2b.pdf",
+      "PackagePath": "staticwebassets\\pdf\\957e6254-b9c4-4797-8562-b1031b092d2b.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\a0394ee0-758f-494f-82df-3c87a6387798.pdf",
+      "PackagePath": "staticwebassets\\pdf\\a0394ee0-758f-494f-82df-3c87a6387798.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\a4b2decd-a0d3-4d51-b508-29ad301035aa.pdf",
+      "PackagePath": "staticwebassets\\pdf\\a4b2decd-a0d3-4d51-b508-29ad301035aa.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\a5f2e200-743f-4b6b-bf92-3bede4216726.pdf",
+      "PackagePath": "staticwebassets\\pdf\\a5f2e200-743f-4b6b-bf92-3bede4216726.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\a9ba2564-93b6-471f-a3b3-e5ccf8aa8fac.pdf",
+      "PackagePath": "staticwebassets\\pdf\\a9ba2564-93b6-471f-a3b3-e5ccf8aa8fac.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\ad83fdbb-5789-4fba-acef-0fdfcaf5c11a.pdf",
+      "PackagePath": "staticwebassets\\pdf\\ad83fdbb-5789-4fba-acef-0fdfcaf5c11a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\c3e107a9-3265-4500-a789-39bf62c0ca6b.pdf",
+      "PackagePath": "staticwebassets\\pdf\\c3e107a9-3265-4500-a789-39bf62c0ca6b.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\caa76d9c-2234-4755-900b-4d6aa6ca80cf.pdf",
+      "PackagePath": "staticwebassets\\pdf\\caa76d9c-2234-4755-900b-4d6aa6ca80cf.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\d3671dff-0536-4a02-830b-b93368b8ebd4.pdf",
+      "PackagePath": "staticwebassets\\pdf\\d3671dff-0536-4a02-830b-b93368b8ebd4.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\da075585-5eea-4818-86b7-d4b6286a8ddd.pdf",
+      "PackagePath": "staticwebassets\\pdf\\da075585-5eea-4818-86b7-d4b6286a8ddd.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\da41369e-9985-448b-85e3-2acb6ffefb3a.pdf",
+      "PackagePath": "staticwebassets\\pdf\\da41369e-9985-448b-85e3-2acb6ffefb3a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\dd338d51-e61a-4049-97fc-acba35d2528f.pdf",
+      "PackagePath": "staticwebassets\\pdf\\dd338d51-e61a-4049-97fc-acba35d2528f.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\e7ca21a1-45c5-46b7-96be-f84108eee355.pdf",
+      "PackagePath": "staticwebassets\\pdf\\e7ca21a1-45c5-46b7-96be-f84108eee355.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\eb7f6db8-83b0-4483-8deb-14a18d32017b.pdf",
+      "PackagePath": "staticwebassets\\pdf\\eb7f6db8-83b0-4483-8deb-14a18d32017b.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\ec158648-c198-4ca9-bfb1-dfd4fd9a82fc.pdf",
+      "PackagePath": "staticwebassets\\pdf\\ec158648-c198-4ca9-bfb1-dfd4fd9a82fc.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yazan\\OneDrive\\Desktop\\SOFTWARE\\NetProject\\NetProject\\wwwroot\\pdf\\fac08a61-9519-4e9e-831d-e54f55c86903.pdf",
+      "PackagePath": "staticwebassets\\pdf\\fac08a61-9519-4e9e-831d-e54f55c86903.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.NetProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.NetProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.NetProject.props",
+      "PackagePath": "build\\NetProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.NetProject.props",
+      "PackagePath": "buildMultiTargeting\\NetProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.NetProject.props",
+      "PackagePath": "buildTransitive\\NetProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

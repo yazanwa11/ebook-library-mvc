@@ -1,0 +1,167 @@
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+<link href="~/css/site.css?v=2.0" rel="stylesheet" />
+
+@model NetProject.Models.MainViewModel
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+<main>
+    <div class="cardContainer">
+        <div class="Card">
+            <h2>Read More</h2>
+            <p>we have a variety of books that you can borrow/buy check out your favorite type of books </p>
+            <a class="button" href="">Books Page</a>
+        </div>
+        <div class="Card">
+            <h2>Books</h2>
+            <p>we have a variety of books that you can borrow/buy check out your favorite type of books </p>
+            <a class="button" href="">Books Page</a>
+        </div>
+        <div class="Card">
+            <h2>Profile</h2>
+            <p>we have a variety of books that you can borrow/buy check out your favorite type of books </p>
+            <a class="button" href="">Books Page</a>
+        </div>
+    </div>
+
+    <div class="feedback-section">
+        <h3>User Feedback</h3>
+        @for (int i = 0; i < Model.Feedbacks.Count; i++)
+        {
+            <div class="feedback-card">
+                <p><strong>Feedback:</strong> @Model.Feedbacks[i]</p>
+                <div class="rating">
+                    @for (int j = 1; j <= 5; j++)
+                    {
+                        <i class="fa @((Model.Ratings[i] >= j) ? "fa-star" : "fa-star-o")"></i>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+</main>
+
+<style>
+    .feedback-section {
+        margin: 30px 0;
+    }
+
+    .feedback-card {
+        padding: 15px;
+        margin: 10px 0;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .feedback-card p {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .rating {
+        margin-top: 10px;
+    }
+
+    .rating i {
+        color: #ff9800;
+        font-size: 18px;
+    }
+
+    .rating i.fa-star-o {
+        color: #ddd;
+    }
+
+    .rating i:hover {
+        transform: scale(1.1);
+    }
+
+    .feedbackSection h2 {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .feedbackContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .feedbackCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .feedbackCard p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    main {
+        margin: 70px;
+    }
+
+    .cardContainer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .Card {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: 300px;
+        height: auto;
+        font-family: "system-ui";
+    }
+
+    .Card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .Card h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .Card p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: rgb(56, 175, 255);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .button:hover {
+        background-color: rgb(40, 150, 230);
+        transform: scale(1.05);
+    }
+</style>

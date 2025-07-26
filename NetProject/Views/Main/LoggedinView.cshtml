@@ -1,0 +1,331 @@
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+@model NetProject.ViewModel.DiscountedBooksViewModel
+
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+<main>
+    @if (TempData["Message"] != null || TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+                <p>@(TempData["Message"] ?? TempData["ErrorMessage"])</p>
+            </div>
+        </div>
+    }
+
+    <div class="cardContainer">
+        <div class="Card">
+            <h2>Sales</h2>
+            <p>Check out the discounts on your favorite books for a limited time!!!</p>
+            <a class="button sales-button" href="#sales-section">Go to Sales</a>
+        </div>
+        <div class="Card">
+            <h2>Books</h2>
+            <p>We have a variety of books that you can borrow/buy. Check out your favorite type of books!</p>
+            <a class="button" href="/Books/BooksView">Books Page</a>
+        </div>
+        <div class="Card">
+            <h2>Profile</h2>
+            <p>Check out your profile to view your activity and borrowed/purchased books!</p>
+            <a class="button" href="/Main/ProfileView">Profile Page</a>
+        </div>
+    </div>
+
+    <!-- New Feedback and Rating Section -->
+    <section id="feedback-section" class="feedback-section">
+        <h2>Give Us Your Feedback!</h2>
+
+        <!-- Rating Stars -->
+        <div class="rating">
+            <span class="star" onclick="setRating(1)">&#9733;</span>
+            <span class="star" onclick="setRating(2)">&#9733;</span>
+            <span class="star" onclick="setRating(3)">&#9733;</span>
+            <span class="star" onclick="setRating(4)">&#9733;</span>
+            <span class="star" onclick="setRating(5)">&#9733;</span>
+        </div>
+
+        <!-- Feedback Form -->
+        <form id="feedbackForm" action="/Main/SubmitFeedback" method="post">
+            <textarea name="feedback" id="feedbackText" placeholder="Leave your feedback..." rows="4"></textarea>
+            <input type="hidden" id="ratingValue" name="rating" />
+            <button type="submit" class="button">Submit Feedback</button>
+        </form>
+    </section>
+
+    <section id="sales-section" class="saleSection">
+        <h2>Books on Sale</h2>
+        <div class="saleCardContainer">
+            @if (Model.DiscountedBooks.Count > 0)
+            {
+                @foreach (var book in Model.DiscountedBooks)
+                {
+                    <div class="saleCard">
+                        <div class="book-image">
+                            <img src="@book.CoverImage" alt="@book.title" class="book-cover" />
+                        </div>
+                        <div class="details">
+                            <h3>@book.title</h3>
+                            <p><strong>Author:</strong> @book.author</p>
+                            <p><strong>Publisher:</strong> @book.publisher</p>
+                            <p><strong>Original Price:</strong>
+                                <span style="text-decoration: line-through; color: #888;">$@book.PurchasePrice</span>
+                            </p>
+                            <p><strong>Discounted Price:</strong>
+                                <span style="color: green; font-weight: bold;">$@book.DiscountedPrice</span>
+                            </p>
+                            <a class="button" href="/Books/BooksView">View Details</a>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No books on sale currently. Check back later!</p>
+            }
+        </div>
+    </section>
+</main>
+
+
+<style>
+    /* Feedback Section */
+    .feedback-section {
+        padding: 40px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+    }
+
+    .feedback-section h2 {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        font-size: 30px;
+        color: #ffd700;
+        cursor: pointer;
+    }
+
+    .rating .star:hover {
+        transform: scale(1.2);
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: none;
+        box-sizing: border-box;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #56c56e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+        background-color: #45a85b;
+        transform: scale(1.05);
+    }
+
+    main {
+        margin: 70px;
+    }
+
+    .cardContainer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .Card {
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: 300px;
+        height: auto;
+        font-family: "system-ui";
+    }
+
+    .Card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .Card h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .Card p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: rgb(56, 175, 255);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .button:hover {
+        background-color: rgb(40, 150, 230);
+        transform: scale(1.05);
+    }
+
+    .sales-button {
+        background-color: #56c56e;
+    }
+
+    .sales-button:hover {
+        background-color: #45a85b;
+    }
+
+    .saleSection {
+        padding: 40px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        margin: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .saleSection h2 {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .saleCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .saleCard {
+        position: relative;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .saleCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .book-image {
+        height: 100%;
+        background-color: #f0f0f0;
+    }
+
+    .book-cover {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .details {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .saleCard:hover .details {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .details h3 {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .details p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .details .button {
+        margin-top: 10px;
+        background-color: #ff9800;
+        color: white;
+        font-size: 14px;
+    }
+
+    .details .button:hover {
+        background-color: #e68900;
+    }
+</style>
+
+<script>
+    let ratingValue = 0;
+
+    function setRating(value) {
+        ratingValue = value;
+        document.getElementById('ratingValue').value = ratingValue;
+
+        const stars = document.querySelectorAll('.star');
+        stars.forEach((star, index) => {
+            if (index < value) {
+                star.style.color = '#ffd700';  // Highlight selected stars
+            } else {
+                star.style.color = '#ccc';  // Reset unselected stars
+            }
+        });
+    }
+
+</script>

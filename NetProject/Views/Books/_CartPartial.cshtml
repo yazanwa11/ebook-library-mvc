@@ -1,0 +1,264 @@
+@model NetProject.Models.User
+<script src="https://kit.fontawesome.com/6715b92013.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/Cart.css?v=2.0">
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<main>
+    @if (TempData["Message"] != null || TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeErrorModal()">&times;</span>
+                <p>@(TempData["Message"] ?? TempData["ErrorMessage"])</p>
+            </div>
+        </div>
+    }
+
+
+    <div class="cart-popup">
+        <h2>Your Shopping Cart</h2>
+
+        @if (Model?.ShoppingCart == null || !Model.ShoppingCart.Any())
+        {
+            <p>Your cart is empty.</p>
+        }
+        else
+        {
+            <div class="container">
+                <div class="books-grid">
+                    @foreach (var item in Model.ShoppingCart)
+                    {
+                        <div class="book-card">
+
+                            <div class="book-details">
+                                <div class="book-title">@item.title</div>
+                                <div class="book-author">by @item.author</div>
+                                <div class="book-price">
+                                <p>Purchase Price :</p>
+                                    @if (item.DiscountPercentage > 0)
+                                    {
+                                        <span style="text-decoration: line-through;">$@item.PurchasePrice</span>
+                                        <span>$@item.DiscountedPrice</span><br>
+                                    }
+                                    else if(item.DiscountPercentage==0)
+                                    {
+                                        <span>$@item.PurchasePrice</span><br>
+                                    }
+
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button class="btn-purchase"
+                                    onclick="openEditModal('purchase', '@item.title')">Purchase</button>
+                                <button class="btn-loan" onclick="openEditModal('loan', '@item.title')">Loan</button>
+                                <form action="@Url.Action("RemoveFromCart", new { bookTitle = item.title })" method="post"
+                                    style="display:inline;">
+                                    <button type="submit" class="btn-remove" style="background-color: #f44336;">Remove</button>
+                                </form>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+        }
+
+        @{
+            decimal totalCost = 0;
+            foreach (var item in Model.ShoppingCart)
+            {
+                if (item.DiscountPercentage > 0)
+                {
+                    totalCost += item.DiscountedPrice;
+                }
+                else
+                {
+                    totalCost += item.PurchasePrice;
+                } 
+            }
+        }
+
+        <!-- Display Total -->
+        <div class="total">
+            <strong>Total: $@totalCost</strong>
+        </div>
+
+
+        <!-- Buy All Button
+        <form action="@Url.Action("BuyAllBooks")" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-buy-all">Buy All</button>
+        </form>
+
+         Loan All Button 
+        <form action="@Url.Action("LoanAllBooks")" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-loan-all">Loan All</button>
+        </form>
+         -->
+
+
+    </div>
+
+
+    <div id="PaymentModal" class="payment-modal" style="display: none;">
+        <div class="payment-modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3>Payment</h3>
+            <form id="editForm" method="post" action="ProcessPayment">
+                <!-- Hidden input for action type -->
+                <input type="hidden" id="actionType" name="actionType" />
+
+                <!-- Hidden input for book title (optional) -->
+                <input type="hidden" id="bookTitle" name="bookTitle" value="bookTitle" />
+
+                <div class="Label1">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="ID">ID:</label>
+                    <input type="number" id="ID" name="ID" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="ExDate">Expire Date:</label>
+                    <input type="text" id="ExDate" name="ExDate" required />
+                </div>
+
+                <div class="Label1">
+                    <label for="CVV">CVV:</label>
+                    <input type="number" id="CVV" name="CVV" required />
+                </div>
+
+                <button type="submit" style="background-color: green; color: aliceblue; padding: 8px;">Save
+                    Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .payment-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .payment-modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            font-family: "Arial", sans-serif;
+
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+
+        button {
+            padding: 5px 8px;
+            border-radius: 3px;
+            border: none;
+
+        }
+
+        input {
+            padding: 4px;
+            margin: 5px;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            z-index: 1000;
+            /* Ensure it appears above other elements */
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            /* Adjust width as needed */
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+    </style>
+
+    <script>
+        function openEditModal(actionType, bookTitle) {
+
+            document.getElementById("actionType").value = actionType;
+            document.getElementById("bookTitle").value = bookTitle;
+
+
+            document.getElementById("PaymentModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("PaymentModal").style.display = "none";
+        }
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const errorMessageModal = document.getElementById("errorMessageModal");
+            if (errorMessageModal) {
+                errorMessageModal.style.display = "flex"; // Show the modal if it exists
+            }
+        });
+
+        function closeErrorModal() {
+            const errorMessageModal = document.getElementById("errorMessageModal");
+            if (errorMessageModal) {
+                errorMessageModal.style.display = "none"; // Hide the modal
+            }
+        }
+    </script>
+
+
+</main>

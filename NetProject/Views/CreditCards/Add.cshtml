@@ -1,0 +1,136 @@
+@model NetProject.Models.CreditCard
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.Title = "Add Credit Card";
+}
+
+<style>
+    body {
+        background-color: #121212;
+        font-family: 'Segoe UI', sans-serif;
+        color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        color: #00adb5;
+    }
+
+    .form-container {
+        max-width: 500px;
+        margin: 40px auto;
+        background-color: #1e1e1e;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .alert-success {
+        background-color: #2e7d32;
+        padding: 12px;
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 6px;
+        color: #e0e0e0;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        background-color: #2c2c2c;
+        border: 1px solid #444;
+        border-radius: 8px;
+        color: #ffffff;
+    }
+
+    .form-control::placeholder {
+        color: #aaaaaa;
+    }
+
+    .text-danger {
+        color: #ff5c5c;
+        font-size: 0.85rem;
+        margin-top: 4px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #00adb5;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+        background-color: #00979e;
+    }
+</style>
+
+<h2>Add Credit Card</h2>
+
+<div class="form-container">
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert-success">
+            @TempData["Message"]
+        </div>
+    }
+
+    <form method="post" action="/CreditCards/Add">
+        <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <input name="FirstName" id="FirstName" type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input name="LastName" id="LastName" type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="ID">ID</label>
+            <input name="ID" id="ID" type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="CardNumber">Card Number</label>
+            <input name="CardNumber" id="CardNumber" type="text" class="form-control" placeholder="1234 5678 9012 3456" />
+        </div>
+
+        <div class="form-group">
+            <label for="ValidDate">Valid Date</label>
+            <input name="ValidDate" id="ValidDate" type="text" class="form-control" placeholder="MM/YY" />
+        </div>
+
+        <div class="form-group">
+            <label for="CVC">CVC</label>
+            <input name="CVC" id="CVC" type="text" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
